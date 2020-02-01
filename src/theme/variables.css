@@ -74,4 +74,83 @@ http://ionicframework.com/docs/theming/ */
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  --ion-item--highlight-color-focused: violet;
+
+  font-family: fantasy;
+  font-size: 1cm;
+
+
 }
+
+
+
+.login_button {
+  --background: #ffdd00;
+  --background-hover: #e0b500;
+  --color: black;
+  --placeholder-color: yellow;
+  --width: 60px;
+  --height: 60px;
+  border: 3.5px solid black;
+  border-radius: 12px;
+}
+
+.register_button{
+  --background: #b8a111;
+  --background-hover: #e0b500;
+  --color: black;
+  --placeholder-color: yellow;
+  --width: 60px;
+  --height: 60px;
+  border: 3.5px solid black;
+  border-radius: 12px;
+
+}
+
+
+#last {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  height: auto;
+  display:inline-block;
+}
+
+
+.round {
+  --border-color:  #ffdd00;
+  --highlight-color-focused: black;
+
+}
+
+
+.round2 {
+  --border-color:  #ffdd00;
+  --highlight-color-focused: black;
+  border: 3.5px
+
+}
+
+.text {
+  color : black;
+  margin-left: 50px;
+  margin-right: auto;
+  display: inline;
+
+}
+
+.ion-avatar{
+  height: 100%;
+  width: 100%;
+}
+
+#nombre-perfil{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 1cm;
+}
+
+#nombre-card-perfil{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 0.5cm;
+}
+

@@ -91,6 +91,7 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
 }
 
 /* Additional Ionic Colors
@@ -167,10 +168,17 @@
   --ion-color-food: #3bc7c4;
   --ion-color-documentation: #b16be3;
   --ion-color-navigation: #6600cc;
+  --ion-item--border-color: white; 
+  --ion-item--highlight-color-invalid: red;
+  --ion-item--highlight-color-valid: green;
 }
 
 .md {
   --ion-toolbar-background: var(--ion-color-primary);
   --ion-toolbar-color: #fff;
   --ion-toolbar-color-activated: #fff;
+
+
 }
+
+

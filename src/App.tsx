@@ -3,6 +3,13 @@ import { Redirect, Route } from 'react-router-dom';
 import { IonApp, IonRouterOutlet } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
+import Register from './pages/Register';
+import UserProfile from './pages/UserProfile';
+import MTGPost from './pages/containers/MTGPost';
+import PokemonPost from './pages/containers/PokemonPost';
+import Menu from './pages/Menu';
+import UserPosts from './pages/UserPosts';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -28,7 +35,13 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route path="/home" component={Home} exact={true} />
+        <Route path="/register" component={Register} />
+        <Route path="/user" component={UserProfile} />
         <Route exact path="/" render={() => <Redirect to="/home" />} />
+        <Route path="/mtg" component={MTGPost}/>
+        <Route path="/pokemon-add" component={PokemonPost} />
+        <Route path="/menu" component={Menu} />
+        <Route path="/users-posts" component={UserPosts} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
