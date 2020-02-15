@@ -13,15 +13,15 @@ export const Menu: React.FC = () => (
       </IonHeader>
       <IonContent>
         <IonList>
-        <IonItem>Mi Perfil</IonItem>
+        <IonItem routerLink="/" >Mi Perfil</IonItem>
         <IonItem>Mis Publicaciones</IonItem>
         <IonItem>Mis Comentarios</IonItem>
         <IonItem>Mensajes</IonItem>
-        <IonItem> </IonItem>
+        <IonItem routerLink="/users-list">Todos los Usuarios </IonItem>
         <IonItem>Publicaciones</IonItem>
         </IonList>
           </IonContent>
-        </IonMenu> */}
+        </IonMenu>
 
     <IonRouterOutlet id="my-content"  ></IonRouterOutlet>
   </>

@@ -1,11 +1,9 @@
 import { IonPage, IonContent, IonToolbar, IonTitle, IonHeader, IonCard, IonCardTitle, IonCardHeader,IonBadge, IonAvatar, IonCol, IonRow, IonText, IonItem, IonLabel} from '@ionic/react';
 import React from 'react';
-
 import Menu from './Menu';
 
 const Image = {src: 'https://thumbs.dreamstime.com/b/hombre-en-la-l%C3%ADnea-an%C3%B3nima-icono-del-avatar-de-los-vidrios-con-el-ejemplo-vector-cuello-aislado-blanco-esquema-masculino-retrato-127785045.jpg', text: 'DexChange'};
 
-console.log(2);
 const UserProfile: React.FC = () =>{
     return (
         <IonPage>
