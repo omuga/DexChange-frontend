@@ -96,7 +96,7 @@ class Register extends React.Component<RouteComponentProps<any>,{username: strin
           </IonItem>
           <IonRow>
             <IonCol>
-              <section id="last">
+              <section id="last"  style={{display:"flex",justifyContent:"center",flexDirection:"column"}}>
               <IonButton class="login_button"  size= "large" expand="block" type="submit" >Sign in</IonButton>
               </section>
             </IonCol>

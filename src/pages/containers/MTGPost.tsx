@@ -4,10 +4,12 @@ import React from 'react';
 import {default as firebase} from '../../firebase/firebase';
 import { Plugins } from '@capacitor/core';
 import axios from 'axios';
+import {MTGInterface} from '../../interfaces/MTGInterface';
 import { IonHeader, IonToolbar, IonTitle, IonItem, IonPage, IonRow, IonLabel, IonInput, IonCol, IonButton, IonSelect, IonSelectOption } from '@ionic/react';
 const { Storage } = Plugins;
 
-class  MTGPost extends React.Component<{},{title:string,type:string,colour:string, rarity:string,description:string,referencia:firebase.storage.Reference|undefined,file:File |undefined}> {
+
+class  MTGPost extends React.Component<{},MTGInterface> {
   constructor(props:any){
     super(props);
     this.state = {
@@ -110,8 +112,7 @@ class  MTGPost extends React.Component<{},{title:string,type:string,colour:strin
           <IonSelect name='colour' onIonChange={(event) => this.handleChange(event)}>
             <IonSelectOption> Incolora</IonSelectOption>
             <IonSelectOption> Blanco </IonSelectOption>
-            <IonSelectOption > Rojo </IonSelectOption>
-            <IonSelectOption selected> Criatura </IonSelectOption>
+            <IonSelectOption selected > Rojo </IonSelectOption>
             <IonSelectOption > Azul </IonSelectOption>
             <IonSelectOption> Negro </IonSelectOption>
             <IonSelectOption> Verde </IonSelectOption>
@@ -122,10 +123,10 @@ class  MTGPost extends React.Component<{},{title:string,type:string,colour:strin
             Rareza
           </IonLabel>
           <IonSelect name='rarity' onIonChange={(event) => this.handleChange(event)}>
+            <IonSelectOption selected> Legendaria </IonSelectOption>
             <IonSelectOption> Rara Mítica </IonSelectOption>
             <IonSelectOption > Raras </IonSelectOption>
             <IonSelectOption > Infrecuente </IonSelectOption>
-            <IonSelectOption selected> Criatura </IonSelectOption>
             <IonSelectOption > Común</IonSelectOption>
             <IonSelectOption> Tierra Básica </IonSelectOption>
           </IonSelect>

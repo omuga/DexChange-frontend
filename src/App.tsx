@@ -33,6 +33,9 @@ import '@ionic/react/css/display.css';
 import './theme/variables.css';
 import UserList from './pages/UserList';
 import ImageUpload from './pages/ImageUpload';
+import CardPosts from './pages/CardPosts';
+import ProfilePosts from './pages/ProfilePosts';
+import MTGCard from './pages/MTGCard';
 
 const App: React.FC  = () => (
   <IonApp>
@@ -49,7 +52,9 @@ const App: React.FC  = () => (
         <Route path="/users-posts" component={UserPosts} />
         <Route path="/users-list" component={UserList} />
         <Route path="/image" component={ImageUpload} />
-    
+        <Route path="/cardposts/:id"  component={MTGCard} />
+        <Route path="/cardposts" component={CardPosts} />
+        <Route path="/profileposts" component={ProfilePosts} />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

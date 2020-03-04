@@ -14,11 +14,11 @@ export const Menu: React.FC = () => (
       <IonContent>
         <IonList>
         <IonItem routerLink="/" >Mi Perfil</IonItem>
-        <IonItem>Mis Publicaciones</IonItem>
+        <IonItem routerLink="/profileposts">Mis Publicaciones</IonItem>
         <IonItem>Mis Comentarios</IonItem>
         <IonItem>Mensajes</IonItem>
         <IonItem routerLink="/users-list">Todos los Usuarios </IonItem>
-        <IonItem>Publicaciones</IonItem>
+        <IonItem routerLink="/cardposts">Publicaciones</IonItem>
         </IonList>
           </IonContent>
         </IonMenu>

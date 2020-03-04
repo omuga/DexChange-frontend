@@ -34,7 +34,6 @@ const MyProfile: React.FC<MyProfileProps> = ({match}) => {
 
     
     useIonViewDidEnter(() => {
-        console.log('ionViewDidEnter event fired');
         getTokenPromise().then(token =>{
             const headers = {
                 'Content-Type': 'application/x-www-form-urlencoded',

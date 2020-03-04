@@ -77,10 +77,10 @@ class Home extends React.Component<RouteComponentProps<any>,{email:string, passw
             <IonLabel style={{ fontWeight:900 }}  position="fixed">Password</IonLabel>
             <IonInput  name= "password" type="password" required value={this.state.password} onIonChange={(event) => this.handleChange(event)} ></IonInput>      
           </IonItem>
-          <section id="last">
+          <section id="last" style={{display:"flex",justifyContent:"center",flexDirection:"column"}}>
             <IonRow>
               <IonCol>
-                <IonButton class="login_button"  type='submit' size= "large" expand="block">Login</IonButton>
+                <IonButton class="login_button"  type='submit' size= "large"  expand="block">Login</IonButton>
               </IonCol>
             </IonRow>
               <IonRow>
